@@ -1,0 +1,51 @@
+.header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  justify-content: center;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1.5em;
+}
+
+.navItem {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navItem a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navItem a:hover {
+  color: #0056b3;
+}
+
+.navItem input {
+  padding: 4px 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.navItem button {
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.navItem button:hover {
+  background-color: #0056b3;
+}
