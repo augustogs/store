@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import Header from "../../../components/Header";
+import Image from "next/image";
 import { products } from '../../../data/ProductData';
 import { useCart } from '../../../contexts/CartContext';
 import styles from '../../../styles/ProductDetail.module.css';
@@ -28,7 +29,7 @@ export default function ProductDetail({
       <h1 className={styles["product-name"]}>{product.name}</h1>
       <h3 className={styles["product-description"]}>{product.description}</h3>
       <p className={styles["product-price"]}>Preço: R${product.price}</p>
-      <img
+      <Image
         className={styles["product-image"]}
         src={product.imageSrc}
         alt={product.imageAlt}

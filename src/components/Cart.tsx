@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import styles from '../styles/Cart.module.css';
 import { useCart } from '../contexts/CartContext';
 
@@ -27,7 +28,7 @@ export default function Cart() {
           <ul>
             {cart.map((item) => (
               <li key={item.id}>
-                <img src={item.imageSrc} alt={item.imageAlt} />
+                <Image src={item.imageSrc} alt={item.imageAlt} />
                 <p>{item.name} - R$ {item.price}</p>
                 <p>{item.quantity}</p>
                 <div>

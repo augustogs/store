@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/ProductCard.module.css';
 import { useCart } from '../contexts/CartContext';
 import { Product } from '../data/ProductData';
